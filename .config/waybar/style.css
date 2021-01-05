@@ -1,0 +1,178 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: Terminus;
+    font-size: 18px;
+}
+
+window#waybar {
+    background: rgba(40, 40, 40, 0.8);
+	color: #282828;
+}
+
+#workspaces button {
+	background: #a89984;
+	color: #504945;
+	padding: 0 5px;
+}
+
+#workspaces button:hover {
+	background: #a89984;
+	color: #af3a03;
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+
+#workspaces button.focused {
+	color: #79740e;
+}
+
+#custom-arrow1 {
+	background: #504945;
+	color: #a89984;
+}
+
+#mode {
+    background: #504945;
+	color: #a89984;
+	padding: 0 5px;
+}
+
+#custom-arrow2 {
+	color: #504945;
+}
+
+#custom-arrow3 {
+	color: #504945;
+}
+
+#temperature,
+#custom-arrow4,
+#cpu,
+#memory {
+	background: #504945;
+	color: #a89984;
+}
+
+#temperature,
+#cpu,	
+#memory {
+	padding: 0 5px;
+}
+
+#temperature.critical {
+	color: #fb4934;
+	animation-name: temp_warning;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes temp_warning {
+	50% {
+		color: #cc241d;
+	}
+}
+
+#custom-arrow5 {
+	background: #504945;
+	color: #a89984;
+}
+
+#network,
+#custom-arrow6,
+#battery,
+#pulseaudio,
+#custom-arrow7,
+#language {
+	background: #a89984;
+	color: #282828;
+}
+
+#network,
+#battery,
+#pulseaudio,
+#language{
+	padding: 0 5px;
+}
+
+#network.disconnected {
+	color: #9d0006;
+}
+
+#battery.charging,
+#battery.plugged {
+	color: #79740e;
+}
+
+#battery.warning:not(.charging) {
+    color: #af3a03;
+	animation-name: bat_warning;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bat_warning {
+    50% {
+		color: #d65d0e;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #9d0006;
+    animation-name: bat_critical;
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bat_critical {
+    50% {
+        color: #cc241d;
+    }   
+}
+
+#language {
+	min-width: 53px;
+}
+
+#custom-arrow8 {
+	background: #a89984;
+	color: #98971a;
+}
+
+#clock {
+	background: #98971a;
+	color: #282828;
+	padding: 0 5px;
+}
+
+#custom-arrow9 {
+	background: #98971a;
+	color: #282828;
+}
+
+#idle_inhibitor {
+	background: #282828;
+	color: #a89984;
+	padding: 0 5px;
+}
+
+#idle_inhibitor.activated {
+	color: #b8bb26;
+	padding: 0 7px 0 6px;
+}
+
+#custom-arrow1,
+#custom-arrow2,
+#custom-arrow3,
+#custom-arrow4,
+#custom-arrow5,
+#custom-arrow6,
+#custom-arrow7,
+#custom-arrow8,
+#custom-arrow9 {
+	font-size: 22px;
+	padding-top: 1px;
+}
