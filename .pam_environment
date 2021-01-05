@@ -1,0 +1,6 @@
+# Enable wayland in firefox
+MOZ_ENABLE_WAYLAND=1
+
+# Some system variables for adding screencast support
+XDG_CURRENT_DESKTOP=sway
+XDG_SESSION_TYPE=wayland
