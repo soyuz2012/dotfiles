@@ -1,0 +1,93 @@
+font=Terminus 14
+edge=top
+output=LVDS-1
+
+[message]
+# The background color for swaynag
+background=#83a598
+# The color to use for borders of buttons
+border=#83a598
+# The color of the border line at the bottom of swaynag
+border-bottom=#83a598
+# The background color for the buttons
+button-background=#458588
+# The color of the text
+text=#282828
+# Thickness of the bar border
+border-bottom-size=0
+# Padding for the message
+message-padding=3
+# Thickness for the details border
+details-border-size=0
+# Thickness for the button border
+button-border-size=1
+# Size of the gap between buttons
+button-gap=1
+# Size of the gap for dismiss button
+button-dismiss-gap=0
+# Margin from dismiss button to edge
+button-margin-right=2
+# Padding for the button text
+button-padding=1
+# Dismiss button
+dismiss-button=Dismiss
+
+[warning]
+# The background color for swaynag
+background=#fe8019
+# The color to use for borders of buttons
+border=#fe8019
+# The color of the border line at the bottom of swaynag
+border-bottom=#fe8019
+# The background color for the buttons
+button-background=#d65d0e
+# The color of the text
+text=#282828
+# Thickness of the bar border
+border-bottom-size=0
+# Padding for the message
+message-padding=3
+# Thickness for the details border
+details-border-size=0
+# Thickness for the button border
+button-border-size=1
+# Size of the gap between buttons
+button-gap=1
+# Size of the gap for dismiss button
+button-dismiss-gap=0
+# Margin from dismiss button to edge
+button-margin-right=2
+# Padding for the button text
+button-padding=1
+# Dismiss button
+dismiss-button=Dismiss
+
+[error]
+# The background color for swaynag
+background=#fb4934
+# The color to use for borders of buttons
+border=#fb4934
+# The color of the border line at the bottom of swaynag
+border-bottom=#fb4934
+# The background color for the buttons
+button-background=#cc241d
+# The color of the text
+text=#282828
+# Thickness of the bar border
+border-bottom-size=0
+# Padding for the message
+message-padding=3
+# Thickness for the details border
+details-border-size=0
+# Thickness for the button border
+button-border-size=1
+# Size of the gap between buttons
+button-gap=1
+# Size of the gap for dismiss button
+button-dismiss-gap=0
+# Margin from dismiss button to edge
+button-margin-right=2
+# Padding for the button text
+button-padding=1
+# Dismiss button
+dismiss-button=Dismiss
