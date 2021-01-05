@@ -1,0 +1,162 @@
+{
+	// General settings
+	"position": "top", // Waybar position
+    "height": 24, // Waybar height
+    
+	// Modules
+    "modules-left": ["sway/workspaces", "custom/arrow1", "sway/mode", "custom/arrow2"],
+    "modules-right": ["custom/arrow3", "temperature#cpu_v1", "temperature#cpu_v2", "custom/arrow4", "cpu", "memory", "custom/arrow5", "network", "custom/arrow6", "battery", "pulseaudio", "custom/arrow7", "sway/language", "custom/arrow8", "clock", "custom/arrow9", "idle_inhibitor"],
+
+	// Modules configuration
+    "sway/workspaces": {
+		"disable-scroll": true,
+		"disable-click": true,
+		"all-outputs": false,
+		"format": "{name}",
+		"tooltip": false,
+	},
+
+	"custom/arrow1": {
+		"format": "",
+		"tooltip": false,
+	},
+
+    "sway/mode": {
+        "format": "{}",
+		"tooltip": false,
+    },
+
+	"custom/arrow2": {
+		"format": "",
+		"tooltip": false,
+	},
+
+    "custom/arrow3": {
+		"format": "",
+		"tooltip": false,
+	},
+
+     "temperature#cpu_v1": {
+		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 60,
+		"format-critical": "{temperatureC}°C ",
+		"format": "{temperatureC}°C {icon}",
+		"format-icons": ["", "", "", "", ""],
+		"on-click": "termite --exec='watch -n 1 sensors'",
+		"tooltip": false,
+		"interval": 1,
+	},
+
+	"temperature#cpu_v2": {
+        "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+        "critical-threshold": 60, 
+        "format-critical": "{temperatureC}°C ", 
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "on-click": "termite --exec='watch -n 1 sensors'",
+        "tooltip": false,
+        "interval": 1,
+    },
+
+	"custom/arrow4": {
+		"format": "",
+		"tooltip": false,
+	},
+
+	"cpu": {
+		"format": "{usage}% ",
+		"tooltip": false,
+		"interval": 1,
+	},
+
+	"memory": {
+		"format": "{used:0.1f}GB/{total:0.1f}GB ",
+		"tooltip": false,
+		"interval": 5,
+	},
+
+	"custom/arrow5": {
+		"format": "",
+		"tooltip": false,
+	},
+
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}",
+		"tooltip": false,
+	},
+
+	"custom/arrow6": {
+		"format": "",
+		"tooltip": false,
+	},
+
+	"battery": {
+		"states": {
+			"warning": 20,
+			"critical": 10
+		},
+		"format": "{capacity}% {icon}",
+		"format-charging": "{capacity}% ",
+		"format-plugged": "{capacity}% ",
+		"format-icons": ["", "", "", "", ""],
+	},
+
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "{volume}% {icon} {format_source}",
+		"format-bluetooth": "{volume}% {icon} {format_source}",
+		"format-bluetooth-muted": " {icon} {format_source}",
+		"format-muted": " {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", "", ""]
+		},
+		"on-click": "termite --exec=alsamixer",
+		"tooltip": false,
+	},
+
+	"custom/arrow7": {
+		"format": "",
+		"tooltip": false,
+	},
+
+	"sway/language": {
+		"format": "{} ",
+		"tooltip": false,
+	},
+
+	"custom/arrow8": {
+		"format": "",
+		"tooltip": false,
+	},
+
+	"clock": {
+		"format": "{:%l:%M %p %d %b %Y }",
+		"tooltip": false,
+	},
+
+	"custom/arrow9": {
+		"format": "",
+		"tooltip": false,
+	},
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+		"tooltip": false,
+    },
+}
