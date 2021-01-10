@@ -34,8 +34,9 @@ set $laptop_disp LVDS-1
 ### General settings
 
 # Border settings
-default_border none
-default_floating_border pixel 2px 
+smart_borders on
+default_border pixel 1px
+default_floating_border pixel 1px
 
 # Gaps setting
 smart_gaps on
